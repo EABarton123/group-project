@@ -1,14 +1,33 @@
-const body = document.getElementById("body");
+function getAllRecipes() {
+  return [
+    {
+      name: "leek and potato soup",
+      ingredients:
+        "water (for water saute), leeks, potatoes, dried thyme, bay leaf, vegetable stock",
+      image:
+        "https://lovingitvegan.com/wp-content/uploads/2018/04/Vegan-Potato-Leek-Soup-13A.jpg",
+    },
+    {
+      name: "carrot omelette",
+      ingredients: "grated carrots, rapeseed oil, eggs, salt",
+      image:
+        "https://www.pregnancyeats.com/wp-content/uploads/2022/01/10-Carrot-Omelette-on-Plate-for-Breakfast_A-Medium.jpg",
+    },
+  ];
+}
+
+const body = document.getElementById("recipes");
 const searchElement = document.getElementById("search");
 const allRecipes = getAllRecipes();
 
 function loadRecipeList(recipes) {
+  const body = document.getElementById("recipes");
   recipes.forEach((recipe) => {
     body.appendChild(createRecipeList(recipe));
   });
 }
 
-loadRecipeList(getAllRecipes);
+loadRecipeList(allRecipes);
 
 function createRecipeList(recipe) {
   const eachRecipeCard = document.createElement("li");
@@ -24,18 +43,19 @@ function createRecipeList(recipe) {
   eachRecipeCard.appendChild(recipeIngredients);
 
   const imgTag = document.createElement("img");
-  imgTag.src = episode.image;
+  imgTag.src = recipe.image;
   eachRecipeCard.appendChild(imgTag);
+  return eachRecipeCard;
 }
 
 searchElement.addEventListener("input", function () {
   const searchInput = searchElement.value.toLowerCase();
-  const filterResults = allRecipes.filter((episode) => {
+  const filterResults = allRecipes.filter((recipe) => {
     return (
       recipe.name.toLowerCase().includes(searchInput) ||
       recipe.ingredients.toLowerCase().includes(searchInput)
     );
   });
   body.innerHTML = "";
-  loadEpisodeList(filterResults);
+  loadRecipeList(filterResults);
 });
