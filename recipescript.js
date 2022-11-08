@@ -30,7 +30,7 @@ function loadRecipeList(recipes) {
 loadRecipeList(allRecipes);
 
 function createRecipeList(recipe) {
-  const eachRecipeCard = document.createElement("li");
+  const eachRecipeCard = document.createElement("section");
 
   const recipeNameHeader = document.createElement("h2");
   recipeNameHeader.innerText = recipe.name; //name is ready
