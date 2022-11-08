@@ -19,7 +19,7 @@ const body = document.getElementById("grow");
 const searchElement = document.getElementById("search");
 const allVegetables = getAllVegetables();
 
-function loadVegetablesList(vegetable) {
+function loadVegetablesList(vegetables) {
   const body = document.getElementById("grow");
   vegetables.forEach((vegetable) => {
     body.appendChild(createVegetableList(vegetable));
