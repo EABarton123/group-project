@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+:root{
+    --primary-color:rgb(13, 12, 12);
+    --secondry-color: rgb(113, 138, 93);
+    --tertiary-color:hsl(180, 1%, 41%);
+  }
+  body{
+    background-color: var(--tertiary-color);
+  }
+#title{
+    font-family: 'Inknut Antiqua', serif;
+    font-size: xx-large;
+    margin-left: 4em;
+}
+#span-title{
+    color: white;
+}
+#main-pic{
+    height:466px ;
+    width: 900px;
+    margin-left: 10em;
+}
+#nav-bar{
+    display: flex;
+    justify-content: right;
+    margin-right: 30px;
+    }
+.button-nav{
+    padding: 0.5em;
+    background-color: var(--secondry-color);
+    color: var(--primary-color);
+    flex-direction: row;
+    margin: 5px;
+}
+a{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size:small;
+    font-weight: bold;
+}
+.text-pic-section{
+    position: relative;
+}
+.text-img{
+    color: var(--primary-color);
+    font-size: large;
+    position: absolute;
+    top: 300px;
+    left: 250px;
+    width: 150px;
+}
