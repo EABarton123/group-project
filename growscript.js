@@ -2,14 +2,16 @@ function getAllVegetables() {
   return [
     {
       name: "How to grow potatoes",
-      instructions: "",
-      image: "",
+      instructions: "instructions in here",
+      image:
+        "https://th.bing.com/th/id/OIP.niYvK3-p7zMbhGmIV_zLiwHaFj?w=237&amp;h=180&amp;c=7&amp;r=0&amp;o=5&amp;dpr=2&amp;pid=1.7",
       link: "",
     },
     {
       name: "How to grow carrots",
-      instructions: "",
-      image: "",
+      instructions: "instructions in here",
+      image:
+        "https://th.bing.com/th/id/OIP.arpvVVBDY9CDTL-FL9Y6lgHaE8?w=252&h=180&c=7&r=0&o=5&dpr=2&pid=1.7",
       link: "",
     },
   ];

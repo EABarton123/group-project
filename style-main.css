@@ -1,0 +1,64 @@
+:root{
+    display: grid;
+        width: 100%;
+        height: 250px;
+        grid-template-areas:
+            "head nav nav"
+            "main main main";
+    --primary-color:rgb(24, 22, 22);
+    --secondry-color: rgb(113, 138, 93);
+    --tertiary-color:hsl(180, 2%, 66%);
+  }
+  body{
+    background-color: var(--tertiary-color);
+  }
+#title > head{
+    grid-area: head;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: xx-large;
+}
+#buttons > nav {
+    grid-area: nav;
+    display: inline-block;
+}
+li {
+    list-style: none;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+#span-title{
+    color: white;
+}
+#main-pic > main {
+    grid-area: main;
+    height:466px ;
+    width: 900px;
+    margin-left: 10em;
+    padding-top: 20px;
+}
+#nav-bar{
+    background-color: rgb(113, 138, 93);
+    }
+.button-nav {
+    padding: 0.5em;
+            background-color: var(--secondry-color);
+            color: var(--primary-color);
+            margin: 5px;
+        }
+a{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size:small;
+    font-weight: bold;
+}
+.text-pic-section{
+    /*position: relative;*/
+}
+.text-img{
+    color: var(--primary-color);
+    font-size: large;
+    position: absolute;
+    top: 300px;
+    left: 250px;
+    width: 150px;
+}
