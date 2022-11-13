@@ -5,7 +5,7 @@ function getAllRecipes() {
       ingredients:
         "water (for water saute), leeks, potatoes, dried thyme, bay leaf, vegetable stock",
       image:
-        "https://lovingitvegan.com/wp-content/uploads/2018/04/Vegan-Potato-Leek-Soup-13A.jpg",
+        "https://healthylivingmarket.com/wp-content/uploads/2017/04/potatoleek.jpg",
     },
     {
       name: "carrot omelette",
