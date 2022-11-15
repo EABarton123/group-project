@@ -74,33 +74,28 @@ a{
     font-size:small;
     font-weight: bold;
 }
-.text-pic-section{
-    /* position: relative; */
-    FONT-WEIGHT: 200;
-    background-image: url("https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8aGVhbHRoeSUyMGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60");
-    position: relative;
-    height: 20em;
-    width: 50em;
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* * #grow {
+    display: grid;
+    grid-template-areas: ;
 }
-.text-pic-container{
+
+section {
     display: flex;
-    justify-content: center;
-    MARGIN-TOP: 1em;
 }
-.text-img{
-    color: var(--primary-color);
-    position:absolute;
-    bottom: 0;
-    text-shadow: 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;
-    font-size: 30px;
-    width: 150px;
-    margin-left: 1.5em;
 
-    /* position: absolute; */
-    /* top: 100px;
-    left: 300px;
-    width: 150px;
-    font-weight: bolder; */
-
-} 
+img {
+    display: ;
+} */ 
