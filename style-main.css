@@ -21,12 +21,12 @@
 #title {
     /* grid-area: head; */
     font-family: 'Inknut Antiqua', serif;
-    font-size: xx-large;
+    font-size: 50px;
 
      /* margin: 0.5em;
     margin-left: 1em;
     display: inline-block; */
-    margin-top: 0;
+    margin-top: 40px;
     
     
 
@@ -104,3 +104,52 @@ a{
     font-weight: bolder; */
 
 } 
+#recipes {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "image image"; 
+    grid-gap: 40px;
+    grid-auto-columns: 50%;
+}
+
+
+#recipes > h2 {
+    grid-area: "header";
+}
+
+#recipes > p {
+    grid-area: "main";
+}
+
+#recipes > img {
+    grid-area: "image";
+}
+
+img {
+    max-width: 100%;
+    max-height: 70%;
+}
+
+#grow {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "image image";
+    grid-gap: 40px;
+    grid-auto-columns: 50%;
+}
+
+#grow>h2 {
+    grid-area: "header";
+}
+
+#grow>p {
+    grid-area: "main";
+}
+
+#grow >img {
+    grid-area: "image";
+}
