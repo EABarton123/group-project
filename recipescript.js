@@ -16,46 +16,53 @@ function getAllRecipes() {
   ];
 }
 
-const body = document.getElementById("recipes");
-const searchElement = document.getElementById("search");
-const allRecipes = getAllRecipes();
+const container = document.querySelector(".container");
+const receipeList = document.getElementById("receipe-list");
+const receipeSearch = document.getElementById("receipe-search");
+const allReceipes = getAllRecipes();
 
-function loadRecipeList(recipes) {
-  const body = document.getElementById("recipes");
-  recipes.forEach((recipe) => {
-    body.appendChild(createRecipeList(recipe));
-  });
+function setup() {
+  displayReceipes(allReceipes);
+  selectReceipes(allReceipes);
 }
 
-loadRecipeList(allRecipes);
+//To see all receipes
+function displayReceipes(receipes){
+  
+  container.innerHTML = "";
 
-function createRecipeList(recipe) {
-  const eachRecipeCard = document.createElement("section");
+  for(let receipe of receipes){
+    const article = document.createElement("article");
 
-  const recipeNameHeader = document.createElement("h2");
-  recipeNameHeader.innerText = recipe.name; //name is ready
+    const title = document.createElement("h2");
+    title.textContent = `${receipe.name}`;
+    article.appendChild(title);
 
-  const recipeIngredients = document.createElement("p");
-  recipeIngredients.innerHTML = recipe.ingredients; //summary is ready
+    const image = document.createElement("img");
+    image.src = receipe.image;
+    article.appendChild(image);
 
-  // Now, we will append them one by one
-  eachRecipeCard.appendChild(recipeNameHeader);
-  eachRecipeCard.appendChild(recipeIngredients);
+    const ingredients = document.createElement("p");
+    ingredients.textContent = `Ingredients: ${receipe.ingredients}`;
+    article.appendChild(ingredients);
 
-  const imgTag = document.createElement("img");
-  imgTag.src = recipe.image;
-  eachRecipeCard.appendChild(imgTag);
-  return eachRecipeCard;
+    container.appendChild(article);
+ }
 }
 
-searchElement.addEventListener("input", function () {
-  const searchInput = searchElement.value.toLowerCase();
-  const filterResults = allRecipes.filter((recipe) => {
-    return (
-      recipe.name.toLowerCase().includes(searchInput) ||
-      recipe.ingredients.toLowerCase().includes(searchInput)
-    );
-  });
-  body.innerHTML = "";
-  loadRecipeList(filterResults);
-});
+
+// To select receipes
+function selectReceipes(receipes){
+  receipeList.innerHTML= "";
+
+   for (let receipe of receipes) {
+     const option = document.createElement("option");
+     const dropdownOption = `${receipe.name}`;
+     option.value = dropdownOption;
+     option.innerText = dropdownOption;
+
+     receipeList.appendChild(option)
+   }
+};    
+
+window.onload = setup();
