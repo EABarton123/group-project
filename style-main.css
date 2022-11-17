@@ -46,11 +46,17 @@
     border : solid 1px black;
     border-radius: 20px;
     display: inline-block;
-    
-    
 }
 #span-title{
     color: white;
+}
+
+#grow-search {
+    background-color: var(--tertiary-color);
+}
+
+#recipe-search {
+    background-color: var(--tertiary-color);
 }
 
 #nav-bar{
@@ -137,7 +143,8 @@ img {
     grid-template-areas:
         "header header"
         "main main"
-        "image image";
+        "image image"
+        "link link";
     grid-gap: 40px;
     grid-auto-columns: 50%;
 }
@@ -148,6 +155,10 @@ img {
 
 #grow>p {
     grid-area: "main";
+}
+
+#grow>a {
+    grid-area: "link";
 }
 
 #grow >img {
