@@ -18,7 +18,7 @@ function getAllVegetables() {
 }
 
 const body = document.getElementById("grow");
-const searchElement = document.getElementById("search");
+const searchElement = document.getElementById("grow-search");
 const allVegetables = getAllVegetables();
 
 function loadVegetablesList(vegetables) {

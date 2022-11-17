@@ -17,7 +17,7 @@ function getAllRecipes() {
 }
 
 const body = document.getElementById("recipes");
-const searchElement = document.getElementById("search");
+const searchElement = document.getElementById("recipe-search");
 const allRecipes = getAllRecipes();
 
 function loadRecipeList(recipes) {
