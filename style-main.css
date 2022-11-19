@@ -61,7 +61,7 @@ a {
     font-weight: 200;
     background-image: url("https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8aGVhbHRoeSUyMGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60");
     position: relative;
-    height: 20em;
+    height: 30em;
     width: 50em;
 }
 
@@ -128,7 +128,7 @@ h2 {
 }
 
 p {
-    color: aliceblue;
+    color: black;
 }
 
 img {
@@ -136,4 +136,23 @@ img {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+}
+
+#grow-search {
+    background-color: var(--tertiary-color);
+}
+
+#grow-list {
+    background-color: var(--tertiary-color);
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: black;
+    background-color: var(--tertiary-color);
+}
+
+::selection {
+    color: black;
+    background-color: var(--tertiary-color);
 }
