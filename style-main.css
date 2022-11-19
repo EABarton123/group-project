@@ -137,3 +137,22 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
+#grow-search {
+    background-color: var(--tertiary-color);
+}
+
+#grow-list {
+    background-color: var(--tertiary-color);
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: black;
+    background-color: var(--tertiary-color);
+}
+
+::selection {
+    color: black;
+    background-color: var(--tertiary-color);
+}
